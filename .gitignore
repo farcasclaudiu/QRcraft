@@ -41,3 +41,33 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+players/*
+worlds/*
+plugins/*
+bin/*
+timings/*
+*.log
+*.txt
+*.phar
+server.properties
+pocketmine.yml
+
+# Common IDEs
+.idea/*
+nbproject/*
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Mac crap
+.DS_Store
+/nbproject/private/
+
+# Sphinx-doc
+/docs/build/
+!/docs/requirements.txt
+
