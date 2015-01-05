@@ -22,7 +22,7 @@ ONLY OPs during gameplay (creative preferred)
 * `/qrt <url>` - test QR text/url to count number of needed blocks (NxN)
 * `/qrc <url> [Auto|horizontal|vertical]` - create QR panel/block
 * `/qrl` - list QR panels IDs
-* `/qrd <ID>` - delete a QR panel by ID
+* `/qrd <ID>` - delete QR panel by ID (fills panel space with air)
 * `/qrp <ID>` - teleport you nearby QR panel with specified ID (IN WORK)
 
 

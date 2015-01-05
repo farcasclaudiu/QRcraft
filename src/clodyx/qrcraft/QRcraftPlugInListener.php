@@ -30,12 +30,12 @@ class QRcraftPlugInListener implements Listener
         $player = $event->getPlayer();
         $blockTouched = $event->getBlock();
 
-        if (\pocketmine\DEBUG > 1) {
-            $direction = $player->getDirectionVector();
-            $msg = "Player direction is X:" . round($direction->x, 2) . " Y:" . round($direction->y, 2) . " Z:" . round($direction->z, 2);
-            $this->pgin->log($msg);
-            $player->sendMessage($msg);
-        }
+//        if (\pocketmine\DEBUG > 1) {
+//            $direction = $player->getDirectionVector();
+//            $msg = "Player direction is X:" . round($direction->x, 2) . " Y:" . round($direction->y, 2) . " Z:" . round($direction->z, 2);
+//            $this->pgin->log($msg);
+//            $player->sendMessage($msg);
+//        }
 
         QRhelper::CreateQRAndUnmark($this->pgin, $player, $blockTouched, $level, true);
     }
