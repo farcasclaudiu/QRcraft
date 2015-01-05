@@ -1,6 +1,6 @@
 #QRcraft
 
-Plugin for PocketMine-MP for creating QR panels (made from white an black wood blocks)
+Plugin for PocketMine-MP for creating QR panels (made from white and black wood blocks)
 
      Copyright (C) 2014 Clodyx <https://github.com/farcasclaudiu/QRcraft>
 
@@ -17,13 +17,13 @@ Plugin for PocketMine-MP for creating QR panels (made from white an black wood b
 
 ## Commands
 
-ONLY OPs during gameplay (creative preferable)
+ONLY OPs during gameplay (creative preferred)
 * `/qr` - shows help page
 * `/qrt <url>` - test QR text/url to count number of needed blocks (NxN)
 * `/qrc <url> [Auto|horizontal|vertical]` - create QR panel/block
 * `/qrl` - list QR panels IDs
 * `/qrd <ID>` - delete a QR panel by ID
-* `/qrp <ID>` - teleport you nearby QR panel with specified ID
+* `/qrp <ID>` - teleport you nearby QR panel with specified ID (IN WORK)
 
 
 ## Configuration
