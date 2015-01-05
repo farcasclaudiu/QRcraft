@@ -1,6 +1,6 @@
 #QRcraft
 
-Plugin for PocketMine-MP for creating QR panels (made from white and black wood blocks)
+Plugin for PocketMine-MP for creating QR panels (made from white and black wool blocks)
 
      Copyright (C) 2014 Clodyx <https://github.com/farcasclaudiu/QRcraft>
 
