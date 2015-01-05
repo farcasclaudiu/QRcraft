@@ -27,8 +27,11 @@ ONLY OPs during gameplay (creative preferred)
 
 Example:
 * `/qrt http://google.com`
+
      "QR panel for 'http://google.com' will need 27x27 blocks"
+
 * `/qrc http://google.com` - begins the creation for specified url in auto mode
+
      "QR block defined a (27x27) for 'http://google.com'"
      "Touch a block to create it!"
           - NOW the player has to touch another block to create the QR planel.
@@ -36,20 +39,27 @@ Example:
           - in auto mode, is player is inclined forward pointing downwards, the QR panel will be generated horizontally,
                otherwise it will be generated vertically.
      "QR block [1] created OK!"
+
 * `/qrc http://google.com h` - begins the creation for specified url in horizontal mode
+
      "QR block defined h (27x27) for 'http://google.com'"
      "Touch a block to create it!"
           - now the player touches the block to build above.
      "QR block [2] created OK!"
+
 * `/qrl`
+
      "--------------"
      "QR LIST"
      "--------------"
      "[1] 'http://google.com' (27) x:10-y:20-z:30"
      "[2] 'http://google.com' (27) x:30-y:20-z:30"
      "--------------"
+
 * `/qrd 2`
+
      "QR panel [1] deleted."
+     
 
 
 ## Configuration
