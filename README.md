@@ -80,6 +80,8 @@ No configuration needed.
 PocketMine-MP version min 1.0.0
 
 ## Releases
+```
 [1.0.0] - initial release
 [1.0.1] - improvements
 [1.0.2] - implemented teleport player nearby QR code panel
+```
