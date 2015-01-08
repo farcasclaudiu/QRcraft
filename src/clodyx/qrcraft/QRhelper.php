@@ -10,7 +10,7 @@
 namespace clodyx\qrcraft;
 
 
-include(__DIR__ . "\..\..\clodyx\phpqrcode\phpqrcode.php");
+include(__DIR__ . "/../../clodyx/phpqrcode/phpqrcode.php");
 
 use pocketmine\math\Vector3;
 use pocketmine\block\Block as BlockAPI;
