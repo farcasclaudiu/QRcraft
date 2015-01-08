@@ -12,6 +12,7 @@ namespace clodyx\qrcraft;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\command\CommandExecutor;
+use pocketmine\math\Vector3;
 use pocketmine\Player;
 
 
@@ -105,7 +106,37 @@ class QRcraftCommand
                     }
                     break;
                 case "qrp":
-                    //todo
+                    if (!isset($this->pgin->qrlist) || count($this->pgin->qrlist) == 0) {
+                        $player->sendMessage("QR panel list is empty!");
+                    } else {
+                        if (isset ($args [0])) {
+                            $idToTP = $args[0];
+                            $qrItem = null;
+                            foreach ($this->pgin->qrlist as $li) {
+                                if ($idToTP == $li[0]) {
+                                    $qrItem = $li;
+                                }
+                            }
+                            if(isset($qrItem) && !is_null($qrItem) )
+                            {
+                                //get qr code panel coords
+                                $coord = $qrItem[3];
+                                $coord[0] = $coord[0] - 2;
+                                $coord[2] = $coord[2] - 2;
+                                //tp playr
+                                $player->teleport(new Vector3($coord[0], $coord[1], $coord[2]));
+                                $player->sendMessage("You've been teleported nearby QR panel [$idToTP].");
+                            }
+                            else
+                            {
+                                $player->sendMessage("QR panel [$idToTP] not found.");
+                            }
+                        }
+                        else
+                        {
+                            $this->showusage($sender);
+                        }
+                    }
                     break;
                 default:
                     $this->showusage($sender);
@@ -124,7 +155,7 @@ class QRcraftCommand
         $player->sendMessage("QRcraft usage:");
         $player->sendMessage("/qr - help page");
         $player->sendMessage("/qrt <url> - test QR text size");
-        $player->sendMessage("/qrc <url> [Auto|horizontal|vertical] - create qr panel");
+        $player->sendMessage("/qrc <url> [Auto|horizontal|vertical] - create QR panel");
         $player->sendMessage("/qrl - list QR panels IDs");
         $player->sendMessage("/qrd <ID> - detele QR panel by ID");
         $player->sendMessage("/qrp <ID> - teleport nearby QR panel by ID");

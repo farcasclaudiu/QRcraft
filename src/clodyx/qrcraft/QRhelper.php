@@ -201,7 +201,7 @@ class QRhelper
         $session["create"] = true;
 
 
-        $player->sendMessage("QR block defined $orientation (" . $size . "x" . $size . ") for '" . $url . "'");
+        $player->sendMessage("QR panel defined $orientation (" . $size . "x" . $size . ") for '" . $url . "'");
         $player->sendMessage("Touch a block to create it!");
     }
 
@@ -245,7 +245,7 @@ class QRhelper
             $session["create"] = false;
             $session["size"] = 0;
 
-            $player->sendMessage("QR block [$qrID] created OK!");
+            $player->sendMessage("QR panel [$qrID] created OK!");
         }
     }
 

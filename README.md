@@ -1,6 +1,6 @@
 #QRcraft
 
-Plugin for PocketMine-MP for creating QR panels (made from white and black wool blocks)
+Plugin for PocketMine-MP for creating QR code panels (made from white and black wool blocks)
 
      Copyright (C) 2014 Clodyx <https://github.com/farcasclaudiu/QRcraft>
 
@@ -19,11 +19,11 @@ Plugin for PocketMine-MP for creating QR panels (made from white and black wool 
 
 ONLY OPs during gameplay (creative preferred)
 * `/qr` - shows help page
-* `/qrt <url>` - test QR text/url to count number of needed blocks (NxN)
-* `/qrc <url> [Auto|horizontal|vertical]` - create QR panel/block
-* `/qrl` - list QR panels IDs
-* `/qrd <ID>` - delete QR panel by ID (fills panel space with air)
-* `/qrp <ID>` - teleport you nearby QR panel with specified ID (IN WORK)
+* `/qrt <url>` - test QR code text/url to count number of needed blocks (NxN)
+* `/qrc <url> [Auto|horizontal|vertical]` - create QR code panel
+* `/qrl` - list QR code panels IDs
+* `/qrd <ID>` - delete QR code panel by ID (fills panel space with air)
+* `/qrp <ID>` - teleports the player nearby QR code panel with specified ID
 
 Example:
 * `/qrt http://google.com`
@@ -32,23 +32,23 @@ Example:
 ```
 * `/qrc http://google.com` - begins the creation for specified url in auto mode
 ```
-"QR block defined a (27x27) for 'http://google.com'"
+"QR panel defined a (27x27) for 'http://google.com'"
 "Touch a block to create it!"
-    - NOW the player has to touch another block to create the QR planel.
+    - NOW the player has to touch another block to create the QR code panel.
     - the new panel will be created above touched block and to the player right side.
     - in auto mode, is player is inclined forward pointing downwards, 
-        the QR panel will be generated horizontally,
+        the QR code panel will be generated horizontally,
         otherwise it will be generated vertically.
-"QR block [1] created OK!"
+"QR panel [1] created OK!"
 ```
 * `/qrc http://google.com h` - begins the creation for specified url in horizontal mode
 ```
-"QR block defined h (27x27) for 'http://google.com'"
+"QR panel defined h (27x27) for 'http://google.com'"
 "Touch a block to create it!"
     - now the player touches the block to build above.
-"QR block [2] created OK!"
+"QR panel [2] created OK!"
 ```
-* `/qrl` - list current defined QR panels
+* `/qrl` - list current defined QR code panels
 ```
  "--------------"
  "QR LIST"
@@ -61,9 +61,13 @@ Example:
 ```
 "QR panel [2] deleted."
 ```
+* `/qrp 2` - teleports the player nearby QR panel with ID 2
+```
+"You've been teleported nearby QR panel [2]."
+```
 
 ## Configuration
-No configuration needed for this moment.
+No configuration needed.
 
 ## Permissions
 
@@ -77,3 +81,5 @@ PocketMine-MP version min 1.0.0
 
 ## Releases
 [1.0.0] - initial release
+[1.0.1] - improvements
+[1.0.2] - implemented teleport player nearby QR code panel
