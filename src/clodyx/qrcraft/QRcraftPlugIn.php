@@ -45,10 +45,7 @@ class QRcraftPlugIn extends PluginBase implements CommandExecutor
 
     public function loadConfiguration()
     {
-        if (!file_exists($this->getDataFolder() . "config.yml")) {
-            @mkdir($this->getDataFolder());
-            file_put_contents($this->getDataFolder() . "config.yml", $this->getResource("config.yml"));
-        }
+        $this->saveDefaultConfig();
     }
 
     public function onDisable()
