@@ -1,5 +1,5 @@
 name: QRcraft
-version: 1.0.3
+version: 1.0.4
 api: 1.0.0
 main: clodyx\qrcraft\QRcraftPlugIn
 author: Clodyx
@@ -18,10 +18,10 @@ commands:
   description: "List QR panels IDs"
   permission: clodyx.plugin.qrcraft
  qrd:
-  description: "delete QR panel by ID"
+  description: "Delete QR panel by ID"
   permission: clodyx.plugin.qrcraft
  qrp:
-  description: "teleport nearby QR panel by ID"
+  description: "Teleport nearby QR panel by ID"
   permission: clodyx.plugin.qrcraft
 permissions:
  clodyx.plugin.qrcraft:
